@@ -1,0 +1,23 @@
+canal_origem	id_solicitacao	id_trecho_solicitacao	tipo_evento	flag_obf	flag_obp	flag_encerramento	data_evento	autor_evento	timestamp_evento	flag_campo_validado
+Sistema origem (produto digital, copilots etc.)	manter ligação com o processo	permite consolidar por trecho	permite derivar y_pred, y_true e revisões	estado do campo no momento do evento	estado do campo no momento do evento	estado do campo no momento do evento	Momento da classificação	Quem registrou (AX3 INTEGRAÇÃO, Analista_x)	permite reconstruir “primeira predição” e “último evento”	Para identificar classificações que tiveram uma validação posterior
+
+
+
+
+Com essa tabela é possivel acompanhar 
+Recall
+Precision
+Acuracia
+
+Com essas métricas é possivel ter a visão de desperdicios no processo, em futuras reaberturas e reiterações seria possivel entender se foi devido a uma classificação do agent ou uma revisão de analista/parceiro.
+
+Divergências entre classificação entre produto interno e copilot
+
+Retroalimentar o modelo
+
+PONTO IMPORTANTE, POSSIVEL RISCO A SER ASSUMIDO - (GORUND TRUTH/RESPOSTA VERDADEIRA)
+
+Quando um modelo de IA faz uma classificação, é necessário saber qual a RESPOSTA VERDADEIRA, nesse caso do armazenamento nas tabelas a RESPOSTA VERDADEIRA seria a classificação final para aquele trecho na tabela. É necessário ter esse GROUND TRUTH pq todas as métricas se baseiam nessa comparação entre
+o que foi classificado pelo Agent e a RESPOSTA FINAL 
+
+mas isso de considerar o ultimo resultado da flag como RESPOSTA VERDADEIRA é uma premissa, dado que o analista/parceiro pode alterar para uma classificação incorreta, ou o agent trazer uma classificação incorreta e nao ter alteração posterior e seguir incorreta. 
