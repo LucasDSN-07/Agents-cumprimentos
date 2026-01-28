@@ -1,23 +1,7 @@
-canal_origem	id_solicitacao	id_trecho_solicitacao	tipo_evento	flag_obf	flag_obp	flag_encerramento	data_evento	autor_evento	timestamp_evento	flag_campo_validado
-Sistema origem (produto digital, copilots etc.)	manter ligação com o processo	permite consolidar por trecho	permite derivar y_pred, y_true e revisões	estado do campo no momento do evento	estado do campo no momento do evento	estado do campo no momento do evento	Momento da classificação	Quem registrou (AX3 INTEGRAÇÃO, Analista_x)	permite reconstruir “primeira predição” e “último evento”	Para identificar classificações que tiveram uma validação posterior
+Primeiramente agradecer a francine por liberar as meninas da operação para nos apoiar aqui para fechar o entendimento sobre informações necessárias para atender dois pontos principais quando estamos falando sobre OBF's relacionadas a contrato, o primeiro é a identificação do contrato, quando ele não está citado de forma explicita nos documentos judiciais, em resumo, o que eu preciso trazer por dados para apoiar o Agent, de forma que caso ele não seja citado diretamente, eu consiga, eu no caso o Agent, a partir dessa informação saber qual o Contrato que está atrelado ao processo judicial em questão.
 
+E o segundo ponto, é oq eu preciso de informação para executar o cumprimento da OBF, partindo de um cenário onde eu ainda não teria o cumprimento automático, porém eu traria as informações de forma direta para o analista que for fazer o cumprimento dessa obrigação.
 
+O foco foi nessas OBF's relacionadas a contratos, Liquidação, inibição, suspensão de margem e baixa de restritivo. Pq quando nós falamos em OBF são os maiores volumes, e aqui nós aproveitamos para criar uma visão olhando para a solicitação, de forma que desse transparencia, o quanto daquelas solicitações onde eu tenho algum cumprimento, nós estariamos abraçando 
 
-
-Com essa tabela é possivel acompanhar 
-Recall
-Precision
-Acuracia
-
-Com essas métricas é possivel ter a visão de desperdicios no processo, em futuras reaberturas e reiterações seria possivel entender se foi devido a uma classificação do agent ou uma revisão de analista/parceiro.
-
-Divergências entre classificação entre produto interno e copilot
-
-Retroalimentar o modelo
-
-PONTO IMPORTANTE, POSSIVEL RISCO A SER ASSUMIDO - (GORUND TRUTH/RESPOSTA VERDADEIRA)
-
-Quando um modelo de IA faz uma classificação, é necessário saber qual a RESPOSTA VERDADEIRA, nesse caso do armazenamento nas tabelas a RESPOSTA VERDADEIRA seria a classificação final para aquele trecho na tabela. É necessário ter esse GROUND TRUTH pq todas as métricas se baseiam nessa comparação entre
-o que foi classificado pelo Agent e a RESPOSTA FINAL 
-
-mas isso de considerar o ultimo resultado da flag como RESPOSTA VERDADEIRA é uma premissa, dado que o analista/parceiro pode alterar para uma classificação incorreta, ou o agent trazer uma classificação incorreta e nao ter alteração posterior e seguir incorreta. 
+Como resultado, nós vimos que em média 50,3% do total de solicitações que eu cumpro algo, tem alguma dessas OBF's de contrato, 31,4% ela em conjunto com alguma outra obrigação, onde eu estaria atendendo parcialmente, E 18,9% onde só foram cumpridas essas obrigações relacionadas a contrato, oq evidencia um impacto direto e significativo.
