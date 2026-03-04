@@ -1,0 +1,19 @@
+Complementando, a disponibilidade desses dados viabiliza uma série de acompanhamentos estratégicos e operacionais.
+
+Passa a ser possível monitorar o volume de solicitações e seus respectivos status, entendendo claramente em que etapa cada solicitação se encontra dentro do fluxo. Isso dá visibilidade ponta a ponta do processo.
+
+Também permite construir o rastro completo dos processamentos realizados pelos Agents, trazendo indicadores de performance como:
+
+tempo de processamento
+
+quantidade de reprocessamentos
+
+volumetria de dúvidas
+
+ocorrência de erros
+
+Com esse nível de transparência, é possível identificar gargalos, medir eficiência operacional e atuar de forma mais rápida em eventuais desvios.
+
+Além disso, torna-se viável acompanhar o volume de obrigações cumpridas, bem como medir o SLA de cumprimento, garantindo controle sobre prazos e qualidade das entregas.
+
+À medida que a solução evolui e amadurece, é natural que novas tabelas sejam criadas a partir dos outputs dos próprios Agents, ampliando as possibilidades de análise e consolidando um ecossistema de dados cada vez mais robusto e estratégico.
