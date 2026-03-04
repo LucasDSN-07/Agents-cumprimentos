@@ -1,0 +1,66 @@
+import pandas as pd
+import random
+from datetime import datetime, timedelta
+
+# ==========================================
+# 1) PARÂMETROS DE GERAÇÃO
+# ==========================================
+
+qtd_solicitacoes = 20  # quantidade de solicitações
+data_base = datetime(2026, 3, 1)
+
+tipos_decisao = ["SENTENÇA", "ENCERRAMENTO"]
+
+status_fluxo = [
+    "LEITURA AGENTS",
+    "OPERAÇÃO - DUVIDA",
+    "OPERAÇÃO - CUMPRIMENTO",
+    "RECURSO",
+    "AGUARDANDO PONTO ÓTIMO"
+]
+
+# ==========================================
+# 2) TB_SOLICITACAO_DECISAO
+# ==========================================
+
+lista_solicitacoes = []
+
+for i in range(qtd_solicitacoes):
+    id_solic = 298300000 + i
+    dt_solic = data_base + timedelta(days=random.randint(0, 5))
+    data_limite = dt_solic + timedelta(days=random.randint(2, 10))
+    data_prevista = data_limite + timedelta(days=random.randint(1, 7))
+    
+    lista_solicitacoes.append({
+        "id_solicitacao": id_solic,
+        "dt_solicitacao": dt_solic.strftime("%d/%m/%Y"),
+        "tipo_decisao": random.choice(tipos_decisao),
+        "data_limite": data_limite.strftime("%d/%m/%Y"),
+        "data_prevista_encerramento": data_prevista.strftime("%d/%m/%Y")
+    })
+
+df_solicitacao = pd.DataFrame(lista_solicitacoes)
+
+# ==========================================
+# 3) TB_STATUS_DECISAO (Histórico)
+# ==========================================
+
+lista_status = []
+
+for id_solic in df_solicitacao["id_solicitacao"]:
+    
+    qtd_status = random.randint(3, 7)  # cada solicitação terá entre 3 e 7 movimentações
+    data_status = data_base
+    
+    for i in range(qtd_status):
+        
+        # Simula avanço no tempo
+        data_status = data_status + timedelta(days=random.randint(0, 2))
+        
+        lista_status.append({
+            "id_solicitacao": id_solic,
+            "status_solicitacao": random.choice(status_fluxo),
+            "data_status": data_status.strftime("%d/%m/%Y")
+        })
+
+df_status = pd.DataFrame(lista_status)
