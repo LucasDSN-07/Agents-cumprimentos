@@ -1,0 +1,323 @@
+1º BLOCO - Entrada do Processo
+
+[Entrada do Processo ]
+	|
+	V
+[Registro do processo judicial]
+
+O que acontece:
+
+Processo passa a existir no ecossistema. Ainda não há decisão nem obrigação
+
+Dados mínimos:
+Nº do processo / pasta
+Autor / Réu
+Data de entrada
+Acompanhamento
+Processo ativo
+
+- Sem análise de cumprimento
+
+----------------------------------------------------------------------------------------------
+
+2º BLOCO - Apuração dos Fatos (Pré-decisão)
+
+   [Entrada ]
+	|
+	V
+[Apuração dos Fatos ]
+
+O que acontece:
+Capturas de provas
+EDI/análise interna
+Estratégia do banco
+
+Pode ocorrer:
+Regularização administrativa
+Cumprimento prévio (ex: retirada de negativação)
+
+Acompanhamento:
+Ainda sem decisão judicial
+Atuação interna relevante
+
+▲ Atenção
+
+Cumprimento prévio precisa ser registrado, mesmo sem decisão
+
+----------------------------------------------------------------------------------------------
+
+ 3° BLOCO - Contestação / Defesa
+
+    [Apuração] 
+
+	|
+	V
+
+[Contestação/Defesa]
+
+O que acontece:
+Elaboração
+Revisão
+Protocolo
+
+Valor para o fluxo:
+Consolida narrativa do banco
+Normalmente esclarece produto/contrato
+
+Acompanhamento:
+Processo segue ativo
+Nenhum gatilho de cumprimento
+
+Importante:
+
+Contestação não gera cumprimento
+
+----------------------------------------------------------------------------------------------
+
+4° BLOCO - Decisão Judicial (Marco Central)
+
+
+  [Contestação]
+	|
+	V
+[DECISÃO JUDICIAL]
+
+Tipos:
+Decisão provisória
+Sentença
+Embargos de declaração
+Acórdão
+
+Nasce o fluxo real do TO BE
+Obrigatório registrar:
+Tipo da decisão
+Data
+Texto decisório relevante
+
+----------------------------------------------------------------------------------------------
+
+5° BLOCO - Pedido x Concedido 
+
+[ Decisão ]
+     |
+     v
+Analise:
+- o que foi pedido?
+- o que foi concedido?
+
+Separação crítica:
+Pedido ≠ Concedido
+
+Exemplo:
+Pedido: A, B, C
+Concedido: A
+
+✅ Cumprir bem = cumprir A
+❌ Erro comum = tentar cumprir B ou C
+
+----------------------------------------------------------------------------------------------
+
+6° BLOCO - Existe Obrigação?
+
+[ Decisão Analisada ]
+        |
+        v
+Existe obrigação concreta?
+       / \
+     NÃO  SIM
+
+Se NÃO
+Apenas acompanhamento processual
+
+Se SIM
+Avança para análise de recurso / cumprimento
+📌 Nem toda decisão gera cumprimento
+
+----------------------------------------------------------------------------------------------
+
+7° BLOCO - Recurso 
+
+[ Obrigação Identificada ]
+        |
+Existe Recurso?
+      /   \
+    SIM   NÃO
+
+Se SIM
+Processo ativo
+Monitoramento
+Aguardar nova decisão
+🚫 Recurso não é gatilho de cumprimento
+
+Se NÃO
+Decisão madura para cumprimento
+
+----------------------------------------------------------------------------------------------
+
+8° BLOCO - Gatilho de Cumprimento
+
+[ Decisão sem Recurso ]
+        |
+        v
+Gatilho de Cumprimento
+
+Gatilhos válidos:
+Decisão desfavorável
+Acordo firmado
+Cumprimento prévio reconhecido
+
+📌 Acordo
+Substitui decisão anterior
+Vira novo marco
+----------------------------------------------------------------------------------------------
+
+9° BLOCO - Cumprimento de Sentença
+
+[ Gatilho ]
+     |
+     v
+[ Cumprimento ]
+
+O que acontece:
+Execução prática da obrigação
+
+Uma decisão pode gerar:
+0 cumprimentos
+1 cumprimento
+N cumprimentos
+
+📌 Cumprimento é um evento, não um status único
+
+----------------------------------------------------------------------------------------------
+
+10° BLOCO - Registro do Cumprimento
+
+[ Cumprimento executado ]
+     |
+     v
+[ Registro do Cumprimento ]
+
+Registro obrigatório:
+O que foi cumprido
+Quando foi cumprido
+Com base em qual decisão/acordo
+
+----------------------------------------------------------------------------------------------
+
+11° BLOCO - Liquidação
+
+[ Cumprimento ]
+        |
+Decisão é liquida?
+      /   \
+    SIM   NÃO
+
+Se NÃO
+Inicia liquidação
+Apuração de valores
+Correção e juros
+
+Liquidação ≠ Cumprimento ≠ Execução
+
+DECISÃO
+   |
+   v
+[Liquidação] (se precisar definir valores)
+   |
+   v
+[Cumprimento] (tentativa normal)
+   |
+   v
+[Execução] (se não cumprir)
+
+
+1. Cumprimento de Sentença
+
+👉 É o ato de realizar a obrigação que já foi definida na decisão.
+
+Ou seja:
+O juiz já decidiu o que deve ser feito
+Agora alguém precisa fazer acontecer na prática
+
+Exemplos:
+Tirar o nome do cliente do SPC
+Pagar indenização
+Entregar um documento
+
+Resumo:
+➡️ Cumprimento = executar a obrigação na prática
+
+
+2. Liquidação de Sentença
+
+👉 É quando a decisão existe, mas o valor (ou detalhe) ainda não está definido
+
+Ou seja:
+O juiz disse “tem que pagar”
+Mas não disse quanto
+
+Então precisa:
+Calcular
+Atualizar
+Apurar valores
+
+Exemplos:
+“Pagar danos materiais” → quanto exatamente?
+“Restituir valores pagos” → quais valores + juros?
+
+Resumo:
+➡️ Liquidação = descobrir “quanto” ou “como exatamente” cumprir
+
+3. Execução
+
+👉 É quando há problema no cumprimento — alguém não cumpriu espontaneamente.
+
+Ou seja:
+Já sabemos o que fazer (cumprimento)
+Já sabemos quanto (liquidação, se precisou)
+Mas a parte não fez
+
+Então o Judiciário entra com força:
+Pode envolver:
+Bloqueio de contas
+Penhora de bens
+Multas
+Medidas coercitivas
+
+Resumo:
+➡️ Execução = forçar o cumprimento
+
+----------------------------------------------------------------------------------------------
+
+12° BLOCO - Execução 
+
+[ Liquidação ]
+     |
+     v
+[ Execução ]
+
+Quando ocorre:
+Discordância de valores
+Descumprimento
+
+📌 Pode ocorrer muito tempo depois
+📌 Processo pode hibernar
+
+----------------------------------------------------------------------------------------------
+
+13° BLOCO - Encerramento e Acompanhamento
+
+[ Cumprimento realizado ]
+     |
+     v
+[ Encerramento Operacional ]
+
+Encerramento:
+Tudo cumprido
+Nenhuma pendência ativa
+
+📌 Encerramento ≠ risco zero
+Pode haver reabertura futura
+
+
+
